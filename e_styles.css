@@ -1,0 +1,28 @@
+
+.container {
+    background-image: url(./assets/storytelling-4203628_1280.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 100vh; 
+    font-weight: bold;
+}
+
+.ebook, .newspaper {
+    margin-left: 50px;
+    margin-top: 50px;
+    flex: 1;
+    overflow-y: scroll; 
+    border: 1px solid transparent;
+}
+a:link{
+    color: #710243;
+    text-decoration: solid;
+ }
+ a:hover{
+    text-decoration: underline;
+ }
+ a:visited{
+    color: #710243;
+    text-decoration: solid;
+ }

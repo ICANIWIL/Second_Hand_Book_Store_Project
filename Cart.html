@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="Cstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Cart</h1>
+    <div id="product-list">
+      <div class="product">
+        <h3>Book 1</h3>
+        <p>Price: Rs.250</p>
+        <button onclick="addToCart('Book 1', 250)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Book 2</h3>
+        <p>Price: Rs.150</p>
+        <button onclick="addToCart('Book 2', 150)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Book 3</h3>
+        <p>Price: Rs.299</p>
+        <button onclick="addToCart('Book 3', 299)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h2>Your Cart</h2>
+    <div id="cart">
+      <p id="empty-message">Your cart is empty. Add some items to get started!</p>
+      <ul id="cart-items"></ul>
+      <p id="total" class="hidden">Total: Rs.<span id="total-price">0</span></p>
+      <button id="proceed-to-buy" class="hidden">Proceed to Buy</button>
+    </div>
+  </div>
+
+  <script src="C_app.js"></script>
+</body>
+</html>

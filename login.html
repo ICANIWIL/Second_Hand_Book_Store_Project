@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <form id="loginForm" class="login-form">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p id="errorMessage" class="error-message"></p>
+      <div class="help-links">
+        <a href="#" id="forgotPassword">Forgot Password?</a>
+        <a href="#" id="createAccount">Create an Account</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Modal for Create Account -->
+  <div id="createAccountModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeCreateAccountModal">&times;</span>
+      <h3>Create an Account</h3>
+      <form id="createAccountForm">
+        <div class="form-group">
+          <label for="newEmail">Email</label>
+          <input type="email" id="newEmail" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="newPassword">Password</label>
+          <input type="password" id="newPassword" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit">Create Account</button>
+        <p id="accountCreationMessage" class="account-creation-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="emailRecoveryModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h3>Recover Email</h3>
+      <p>Please enter your registered phone number or username to retrieve your email.</p>
+      <input type="text" id="recoveryInput" placeholder="Enter phone number or username">
+      <button id="recoverEmailButton">Recover Email</button>
+      <p id="recoveryMessage" class="recovery-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
